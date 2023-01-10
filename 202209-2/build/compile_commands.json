@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/Users/rainchen/CodingArea/ccf-csp-problemset/202209-2/build",
-  "command": "/usr/bin/clang++   -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk -std=gnu++17 -o CMakeFiles/202209-2.dir/main.cpp.o -c /Users/rainchen/CodingArea/ccf-csp-problemset/202209-2/main.cpp",
-  "file": "/Users/rainchen/CodingArea/ccf-csp-problemset/202209-2/main.cpp"
-}
-]
