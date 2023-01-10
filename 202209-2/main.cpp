@@ -29,5 +29,6 @@ int main() {
             break;
         }
     }
+    delete[] a;
     return 0;
 }
