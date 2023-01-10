@@ -1,3 +1,3 @@
 # CCF CSP Problemset Solutions
 
-Not for commercial use.
+**For Non-Commercial-Use Only**
