@@ -33,9 +33,7 @@ void set_risk_region(int this_region, int this_day) {
 
 // 檢查漫遊消息是否滿足
 bool check_roaming_messages(int roaming_day, int roaming_user, int roaming_region, int current_day) {
-    if (is_risk_region[roaming_region] and roaming_day >= current_day - 6 and roaming_day <= current_day and
-        roaming_day >= region_risk_last_time[roaming_region].first and
-        current_day <= region_risk_last_time[roaming_region].second) {
+    if (is_risk_region[roaming_region] and roaming_day >= current_day - 6 and roaming_day <= current_day and roaming_day >= region_risk_last_time[roaming_region].first and current_day <= region_risk_last_time[roaming_region].second) {
         return true;
     } else {
         return false;
