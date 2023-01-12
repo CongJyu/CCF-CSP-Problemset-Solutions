@@ -29,6 +29,17 @@ void set_risk_region(int this_region, int this_day) {
     is_risk_region.at(this_region) = true;
 }
 
+bool check_roaming_messages(int roaming_day, int roaming_user, int roaming_region, int current_day) {
+    // 檢查漫遊消息是否滿足
+    if (is_risk_region.at(roaming_region) and current_day >= roaming_day - 6
+        and current_day >= region_risk_last_time.at(roaming_region).first
+        and roaming_day <= region_risk_last_time.at(roaming_region).second) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 int main() {
     ios::sync_with_stdio(false);
     int n{};
