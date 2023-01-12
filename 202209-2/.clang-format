@@ -13,7 +13,7 @@ AlignEscapedNewlines: Right
 
 AlignOperands: true
 
-AlignTrailingComments: true
+AlignTrailingComments: false
 
 AllowAllParametersOfDeclarationOnNextLine: false
 
@@ -121,7 +121,7 @@ SpaceBeforeParens: ControlStatements
 
 SpaceInEmptyParentheses: false
 
-SpacesBeforeTrailingComments: 1
+SpacesBeforeTrailingComments: 2
 
 SpacesInAngles: false
 
