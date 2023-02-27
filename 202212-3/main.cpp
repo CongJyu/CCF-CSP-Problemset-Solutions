@@ -5,8 +5,13 @@
 using namespace std;
 
 int q_mat[1001][1001];
-int m_mat[8][8] = {0};
+// int m_mat[8][8] = {0};
 int scanned_data[10001];
+
+struct Matrix {
+    int order;
+    int data;
+} m_mat[8][8];
 
 int main() {
     ios::sync_with_stdio(false);
@@ -22,6 +27,6 @@ int main() {
     for (int i{}; i < n; ++i) {
         cin >> scanned_data[i];
     }
-    // 仲未完成，聽日繼續
+    
     return 0;
 }
