@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int yy[10001];
+int yy[100001];
 
 int main() {
     ios::sync_with_stdio(false);
