@@ -1,34 +1,34 @@
-// ccf csp 202206-1
+// ccf-csp 202206-1
 
 #include <iostream>
-#include <iomanip>
+#include <vector>
 #include <cmath>
 
 using namespace std;
-
-double func(int a_i, double a_ave, double d_a) {
-    return (a_i - a_ave) / sqrt(d_a);
-}
 
 int main() {
     ios::sync_with_stdio(false);
     int n{};
     cin >> n;
-    int *a{new int[n]};
-    double sum{};
+    vector<int> a;
     for (int i{}; i < n; ++i) {
-        cin >> a[i];
-        sum += a[i];
+        int tmp_a{};
+        cin >> tmp_a;
+        a.push_back(tmp_a);
     }
-    double ave{sum / n};
-    double d{};
+    double average{};
     for (int i{}; i < n; ++i) {
-        d += (a[i] - ave) * (a[i] - ave);
+        average += a.at(i);
     }
-    d /= n;
+    average /= n;
+    double dd{};
     for (int i{}; i < n; ++i) {
-        cout << fixed << setprecision(9) << func(a[i], ave, d) << endl;
+        dd += (a.at(i) - average) * (a.at(i) - average);
     }
-    delete[] a;
+    dd /= n;
+    for (int i{}; i < n; ++i) {
+        double result{(a.at(i) - average) / sqrt(dd)};
+        cout << result << endl;
+    }
     return 0;
 }
